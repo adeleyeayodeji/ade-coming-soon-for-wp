@@ -4,7 +4,7 @@ Donate link: http://example.com/
 Tags: coming soon, maintenance, countdown
 Requires at least: 4.0.1
 Tested up to: 6.4
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,10 @@ You can configure the countdown timer in the plugin settings page.
 2. This is the second screenshot
 
 == Changelog ==
+
+= 1.1.0 =
+
+- Added fix
 
 = 1.0.0 =
 

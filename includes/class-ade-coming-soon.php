@@ -48,7 +48,7 @@ class AdeComingSoonPage
         $coming_soon = get_option('ade_coming_soon_enable', 'no');
         if ($coming_soon == 'yes') {
             //check if user is logged in
-            if (!is_user_logged_in() || !current_user_can('manage_options')) {
+            if (!current_user_can('manage_options')) {
                 //get option for selected page id
                 $coming_soon_page_id = get_option('ade_coming_soon_enable_page', '');
 

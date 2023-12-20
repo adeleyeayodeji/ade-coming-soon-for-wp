@@ -6,7 +6,7 @@
  * Author:      Adeleye Ayodeji
  * Author URI:  https://www.adeleyeayodeji.com
  * Description: This is a simple coming soon page plugin that allows you to create a coming soon page for your website using Elementor Page Builder.
- * Version:     0.1.0
+ * Version:     1.1.0
  * License:     GPL-2.0+
  * License URL: http://www.gnu.org/licenses/gpl-2.0.txt
  * text-domain: ade-coming-soon
