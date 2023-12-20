@@ -1,0 +1,30 @@
+.ade-coming-soon-page .ade-coming-soon-1 {
+  /* Set height to 100% for body and html to enable the background image to cover the whole page: */
+  min-height: 100vh !important;
+  height: 100vh !important;
+  max-height: 100% !important;
+  /* Position text in the top-left corner */
+  /* Style the <hr> element */
+}
+.ade-coming-soon-page .ade-coming-soon-1 .bgimg {
+  /* Center the background image */
+  background-position: center !important;
+  /* Scale and zoom in the image */
+  background-size: cover !important;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+  position: relative !important;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: white !important;
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace !important;
+  /* Set the font-size to 25 pixels */
+  font-size: 25px !important;
+}
+.ade-coming-soon-page .ade-coming-soon-1 .ade-header-logo {
+  display: flex !important;
+  justify-content: center !important;
+}
+.ade-coming-soon-page .ade-coming-soon-1 hr {
+  margin: auto !important;
+  width: 40% !important;
+}
