@@ -12,7 +12,7 @@ class AdeComingSoonPage
     public function __construct()
     {
         //wp 
-        add_action('wp', array($this, 'wp'));
+        add_action('init', array($this, 'wp'));
         //add a new column to post_type=page
         add_filter('manage_page_posts_columns', array($this, 'add_new_page_column'));
         //update the column with the value
@@ -44,10 +44,14 @@ class AdeComingSoonPage
      */
     public function wp()
     {
+        //exclude wp-admin path and wp-login.php
+        if (is_admin() || strpos($_SERVER['REQUEST_URI'], 'wp-login.php') !== false) {
+            return;
+        }
         //check if coming soon is enabled
         $coming_soon = get_option('ade_coming_soon_enable', 'no');
         if ($coming_soon == 'yes') {
-            //check if user is logged in
+            //check if user is logged in or if it's the login page
             if (!current_user_can('manage_options')) {
                 //get option for selected page id
                 $coming_soon_page_id = get_option('ade_coming_soon_enable_page', '');

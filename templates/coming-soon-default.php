@@ -57,7 +57,7 @@ if (!defined('ABSPATH')) {
         }
 
         header {
-            top: 230px;
+            top: 30px;
             text-align: center;
         }
 
@@ -178,6 +178,97 @@ if (!defined('ABSPATH')) {
             .fa {
                 vertical-align: middle;
                 font-size: 21px;
+            }
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            header {
+                top: 60;
+            }
+
+            .countdown {
+                font-size: 20px;
+            }
+
+            .countdown span {
+                font-size: 12px;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            header {
+                top: 60px;
+            }
+
+            .countdown {
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            header {
+                top: 100px;
+            }
+
+            .countdown {
+                font-size: 20px;
+            }
+
+            .countdown span {
+                font-size: 12px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            header {
+                top: 150px;
+            }
+
+            .countdown {
+                font-size: 28px;
+            }
+
+            .countdown span {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            header {
+                top: 150px;
+            }
+
+            .countdown {
+                font-size: 28px;
+            }
+
+            .countdown span {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 40px;
             }
         }
     </style>
